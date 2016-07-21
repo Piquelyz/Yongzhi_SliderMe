@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sFc-mQ-1zI">
+                                <rect key="frame" x="180" y="77" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SliderThumb-Normal" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-um-OT0">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cheap Thrills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EV-ew-jpG">
+                                <rect key="frame" x="246" y="525" width="108" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="qkJ-7P-6r3"/>
+                                    <constraint firstAttribute="width" constant="108" id="sAm-rz-Sb8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sFc-mQ-1zI" firstAttribute="centerX" secondItem="0EV-ew-jpG" secondAttribute="centerX" id="5Ik-km-fza"/>
+                            <constraint firstItem="sFc-mQ-1zI" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="57" id="Epg-1u-haL"/>
+                            <constraint firstItem="sFc-mQ-1zI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="180" id="Qit-J2-Aqq"/>
+                            <constraint firstItem="0EV-ew-jpG" firstAttribute="top" secondItem="sFc-mQ-1zI" secondAttribute="bottom" constant="82" id="SXT-MJ-cEb"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0EV-ew-jpG" secondAttribute="bottom" constant="172" id="gG1-m6-pyK"/>
+                            <constraint firstItem="sFc-mQ-1zI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gLR-Kz-SDR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +52,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SliderThumb-Normal" width="32" height="32"/>
+    </resources>
 </document>

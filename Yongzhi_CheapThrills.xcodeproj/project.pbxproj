@@ -10,9 +10,10 @@
 		73CDF33B1D35CA0000AD06FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF33A1D35CA0000AD06FF /* AppDelegate.swift */; };
 		73CDF33D1D35CA0000AD06FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF33C1D35CA0000AD06FF /* ViewController.swift */; };
 		73CDF3401D35CA0000AD06FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CDF33E1D35CA0000AD06FF /* Main.storyboard */; };
-		73CDF3421D35CA0000AD06FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CDF3411D35CA0000AD06FF /* Assets.xcassets */; };
 		73CDF3451D35CA0000AD06FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CDF3431D35CA0000AD06FF /* LaunchScreen.storyboard */; };
 		73CDF3501D35CA0100AD06FF /* Yongzhi_CheapThrillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF34F1D35CA0100AD06FF /* Yongzhi_CheapThrillsTests.swift */; };
+		73CDF35C1D35E8F200AD06FF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF35A1D35E8F200AD06FF /* InfoViewController.swift */; };
+		73CDF35D1D35E8F200AD06FF /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CDF35B1D35E8F200AD06FF /* InfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,13 @@
 		73CDF33A1D35CA0000AD06FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73CDF33C1D35CA0000AD06FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73CDF33F1D35CA0000AD06FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73CDF3411D35CA0000AD06FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CDF3441D35CA0000AD06FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73CDF3461D35CA0000AD06FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73CDF34B1D35CA0100AD06FF /* Yongzhi_CheapThrillsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yongzhi_CheapThrillsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CDF34F1D35CA0100AD06FF /* Yongzhi_CheapThrillsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yongzhi_CheapThrillsTests.swift; sourceTree = "<group>"; };
 		73CDF3511D35CA0100AD06FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73CDF35A1D35E8F200AD06FF /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		73CDF35B1D35E8F200AD06FF /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 				73CDF33A1D35CA0000AD06FF /* AppDelegate.swift */,
 				73CDF33C1D35CA0000AD06FF /* ViewController.swift */,
 				73CDF33E1D35CA0000AD06FF /* Main.storyboard */,
-				73CDF3411D35CA0000AD06FF /* Assets.xcassets */,
+				73CDF35A1D35E8F200AD06FF /* InfoViewController.swift */,
+				73CDF35B1D35E8F200AD06FF /* InfoViewController.xib */,
 				73CDF3431D35CA0000AD06FF /* LaunchScreen.storyboard */,
 				73CDF3461D35CA0000AD06FF /* Info.plist */,
 			);
@@ -146,6 +149,7 @@
 				TargetAttributes = {
 					73CDF3361D35CA0000AD06FF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H98Z4S797L;
 					};
 					73CDF34A1D35CA0100AD06FF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -178,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CDF3451D35CA0000AD06FF /* LaunchScreen.storyboard in Resources */,
-				73CDF3421D35CA0000AD06FF /* Assets.xcassets in Resources */,
+				73CDF35D1D35E8F200AD06FF /* InfoViewController.xib in Resources */,
 				73CDF3401D35CA0000AD06FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CDF33D1D35CA0000AD06FF /* ViewController.swift in Sources */,
+				73CDF35C1D35E8F200AD06FF /* InfoViewController.swift in Sources */,
 				73CDF33B1D35CA0000AD06FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,10 +332,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yongzhi_CheapThrills/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yongzhi.Yongzhi-CheapThrills";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +347,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yongzhi_CheapThrills/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yongzhi.Yongzhi-CheapThrills";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -388,6 +401,7 @@
 				73CDF3561D35CA0100AD06FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73CDF3571D35CA0100AD06FF /* Build configuration list for PBXNativeTarget "Yongzhi_CheapThrillsTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +410,7 @@
 				73CDF3591D35CA0100AD06FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
